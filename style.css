@@ -146,8 +146,8 @@ body {
     width: 70vw;
     padding: 10px;
     background-color: #1ed75f64 ;
-    display: ;
-    justify-content: center;
+    
+    
     border-radius: 3px;
     
     
@@ -190,7 +190,7 @@ body {
     
 }
 .seekbar{
-    height:1px;
+    height:2px;
     width: 98%;
     background-color: rgba(192, 190, 190, 0.147);
     border: 3px solid rgba(220, 215, 215, 0.348);
@@ -209,6 +209,10 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 13px;
     transition: left 0.5s;
+}
+.songsbutton{
+    position: fixed;
+    right: 33%;
 }
 .songsbutton img{
     cursor: pointer;
