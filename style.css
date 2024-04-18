@@ -15,7 +15,7 @@ body {
 }
 .right {
     position: relative;
-  width: 75vw;
+    width: 75vw;
 }
 
 .home ul li {
@@ -54,9 +54,9 @@ body {
 .footer a {
   color: gray;
 }
-.right{
-    margin: 16px 0px;;
-}
+/* .right{
+    margin: 40px 0px;;
+} */
 .header{
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@ body {
     flex-wrap: wrap;
     margin: 20px;
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .card{
     width: 200px;
@@ -97,7 +97,7 @@ body {
     bottom: 120px;
     right: 15px;
     opacity: 1;
-    transition: ;
+    transition: all 1s ease-out;
 }
 .play img{
     width: 35px;
@@ -141,7 +141,7 @@ body {
 }
 .playBar{
     position: fixed;
-    height: 40px;
+    min-height: 40px;
     bottom: 30px;
     width: 70vw;
     padding: 10px;
@@ -172,6 +172,12 @@ body {
     overflow: auto;
     margin-bottom: 44px ;
 }
+.hamburger{
+    display: none;
+}
+.left .close{
+    display: none;
+}
 .songlist .info{
     font-size: 13px;
     width: 344px;
@@ -191,10 +197,10 @@ body {
 }
 .seekbar{
     height:2px;
-    width: 98%;
+    width: 70vw;
     background-color: rgba(192, 190, 190, 0.147);
     border: 3px solid rgba(220, 215, 215, 0.348);
-    ;
+    
     border-radius: 10px;
     position: absolute;
     bottom: 5px;
@@ -210,10 +216,10 @@ body {
     border-radius: 13px;
     transition: left 0.5s;
 }
-.songsbutton{
+/* .songsbutton{
     position: fixed;
     right: 33%;
-}
+} */
 .songsbutton img{
     cursor: pointer;
 }
@@ -223,8 +229,69 @@ body {
 .abovebar{
     
     display: flex;
-    
+    padding: 1px;
     justify-content: space-between;
     align-items: center;
+}
+@media screen and (max-width: 1400px) {
+    body{
+        background-color: black;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    .left{
+        
+        position: absolute;
+        left: -100%;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 370px;
+    }
+    .left .close{
+        display: block;
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+    .songsbutton{
+        width: 150px;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playBar{
+        font-size: 13px;
+        height: 45px;
+        width: calc(100vw - 50px);
+        padding: 5px;
+        background-color: #1ed75f64;
+    }
+    .hamburger{
+        display: block;
+    }
+    .cardContainer{
+        margin: 0;
+        justify-content: center;
+    }
+    .card{
+        width: 90vw;
+    }
+    .abovebar{
+        width: 87vw;
+        height: 26px;
+    }
+    .seekbar{
+        width: calc(100vw - 60px);
+    }
+    .songtime{
+        padding: 0px;
+    }
+    .spotifyPlaylist h1{
+        margin: 17px;
+    }
+    
 }
 
