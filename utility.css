@@ -32,4 +32,12 @@
 .p-1{
     padding: 12px;
 }
+@media screen and (max-width: 1400px) {
+    .m-1{
+        margin: 0px;
+    }
+    .p-1{
+        padding: 15px;
+    }
+}
 

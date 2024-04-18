@@ -146,7 +146,7 @@ body {
     bottom: 30px;
     width: 70vw;
     padding: 10px;
-    background-color: #1ed75f64 ;
+    background-color: #1d2626 ;
     
     
     border-radius: 3px;
@@ -217,10 +217,7 @@ body {
     border-radius: 13px;
     transition: left 0.5s;
 }
-/* .songsbutton{
-    position: fixed;
-    right: 33%;
-} */
+
 .songsbutton img{
     cursor: pointer;
 }
@@ -235,6 +232,20 @@ body {
     margin-bottom: 8px;
 
 }
+.timevol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
 .abovebar{
     
     display: flex;
@@ -259,8 +270,8 @@ body {
         width: 370px;
     }
     .home, .library{
-        padding: 0;
-        margin: 0;
+        padding: 8px;
+        margin: 4px;
     }
     .left .close{
         display: block;
@@ -273,18 +284,18 @@ body {
         margin-bottom: 20px;
     }
     .songsbutton{
-        width: 150px;
+        width: 92px;
     }
     .right{
         width: 100vw;
     }
     .playBar{
-        bottom: 20px;
+        bottom: 15px;
         font-size: 13px;
-        height: 45px;
+        height: 140px;
         width: calc(100vw - 50px);
         padding: 5px;
-        background-color: #1ed75f64;
+        background-color: hwb(138 17% 78%);
     }
     .hamburger{
         display: block;
@@ -297,22 +308,36 @@ body {
         width: 90vw;
     }
     .abovebar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
         width: 87vw;
-        height: 26px;
+        height: 101px;
     }
     .seekbar{
         width: calc(100vw - 60px);
     }
     .songtime{
+        width: 98;
         padding: 0px;
     }
     .songinfo{
-        margin: 0;
-        height: 20px;
+        margin-bottom: 8px;
+        height: 22px;
+        max-width: 102px;
+        margin: auto;
     }
     .spotifyPlaylist h1{
         margin: 22px;
     }
+    .timevol{
+        gap: 80px;
+    }
+    
+        
+        
+    
     
 }
 
