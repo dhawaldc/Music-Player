@@ -9,8 +9,9 @@ body {
   background-color: rgb(233, 220, 220);
   color: white;
 }
+
 .left {
-  padding: 10px;
+  padding: 2px;
   width: 25vw;
 }
 .right {
@@ -223,8 +224,16 @@ body {
 .songsbutton img{
     cursor: pointer;
 }
-.soninfo , .songtime{
-    padding: 10px;
+.songinfo , .songtime{
+    
+    padding: 5px;
+}
+.songinfo{
+    
+    width: 150px;
+    height: 35px;
+    margin-bottom: 8px;
+
 }
 .abovebar{
     
@@ -237,7 +246,7 @@ body {
     body{
         background-color: black;
     }
-    h1{
+    .spotifyPlaylist h1{
         display: flex;
         justify-content: center;
     }
@@ -249,12 +258,19 @@ body {
         z-index: 1;
         width: 370px;
     }
+    .home, .library{
+        padding: 0;
+        margin: 0;
+    }
     .left .close{
         display: block;
         position: absolute;
         right: 31px;
         top: 25px;
         width: 29px;
+    }
+    .footer a{
+        margin-bottom: 20px;
     }
     .songsbutton{
         width: 150px;
@@ -263,6 +279,7 @@ body {
         width: 100vw;
     }
     .playBar{
+        bottom: 20px;
         font-size: 13px;
         height: 45px;
         width: calc(100vw - 50px);
@@ -289,8 +306,12 @@ body {
     .songtime{
         padding: 0px;
     }
+    .songinfo{
+        margin: 0;
+        height: 20px;
+    }
     .spotifyPlaylist h1{
-        margin: 17px;
+        margin: 22px;
     }
     
 }
